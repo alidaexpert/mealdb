@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random User</title>
+    <!-- bootstrap css  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <!-- font awesome  -->
+    <script src="https://kit.fontawesome.com/9bfb816dfd.js" crossorigin="anonymous"></script>
+
+    <!-- plain css  -->
+    <style>
+        .heightUser{
+            height: 350px;
+        }
+        .font{
+            font-size:40px;
+        }
+        .font:hover{
+color:rgb(255, 104, 104);
+        }
+        /* .border{
+
+        } */
+        .text{
+            height:65px;
+        }
+        .user{
+            height:125px
+        }
+    </style>
+
+</head>
+<body>
+    <h2 class="text-center my-4">Random User</h2>
+    
+    <div  class="container bg-dark heightUser rounded-3">
+<div  class=" align-items-center justify-content-center d-flex pt-4">
+    <div id="users" class="user" ></div>  
+</div>
+<div  class="text-center text text-white my-3">
+    <p id="textTitle" class="m-0"></p>
+    <h2 id="text" class="m-0"></h2>
+</div>
+<div class="d-flex justify-content-center text-white mt-5 gap-5">
+    <div><i id="userName" class="far fa-user font"></i></div>
+    <div><i id="email" class="far fa-envelope font"></i></div>
+    <div><i id="birth" class="far fa-calendar-alt font"></i></div>
+    <div><i id="location" class="fas fa-map-marked-alt font"></i></div>
+    <div><i id="phone" class="fas fa-phone-alt font"></i></div>
+    <div><i id="password" class="fas fa-lock font"></i></div>
+</div>
+
+    </div>
+    <div class="d-flex justify-content-center mt-2">
+        <button onclick="randomUser()" class="btn btn-danger ">Randome User</button>
+    </div>
+    
+
+
+
+<!-- bootstrap javascript   -->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+
+    <!-- javascript  -->
+    <script src="js/random.js"></script>
+</body>
+</html>
