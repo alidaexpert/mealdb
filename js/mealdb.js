@@ -4,6 +4,12 @@ const seachFood=async ()=>{
     // console.log(searchText)
     searchField.value=''
     const errorDiv=document.getElementById('display-error')
+    const mealDiv=document.getElementById('display-meal')
+    const searchElemet=document.getElementById('search-box')
+searchElemet.textContent=''
+    // mealDiv.style.display='none'
+    mealDiv.textContent=''
+    errorDiv.textContent=''
     if(searchText==''){  
         errorDiv.textContent=''
         const p=document.createElement('p')
@@ -32,7 +38,7 @@ displayError()
     }
 }
 const displayError=()=>{
-    const errorDiv=document.getElementById('display-meal')
+    const errorDiv=document.getElementById('display-error')
     errorDiv.textContent=''
         const p=document.createElement('p')
         p.className=`bg-black text-white my-4 py-3 px-2 text-center rounded-3`
